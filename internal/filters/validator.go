@@ -1,7 +1,7 @@
 package filters
 
 import (
-	"github.com/Prosp3r/0xwire/owlscalp/internal/types"
+	"github.com/Prosp3r/owlscalp/internal/types"
 )
 
 func ValidateSignal(signal *types.TradeSignal, candles []types.Candle) bool {

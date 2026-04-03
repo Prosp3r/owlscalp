@@ -3,9 +3,9 @@ package backtester
 import (
 	"context"
 
-	"github.com/Prosp3r/0xwire/owlscalp/internal/filters"
-	"github.com/Prosp3r/0xwire/owlscalp/internal/indicators"
-	"github.com/Prosp3r/0xwire/owlscalp/internal/types"
+	"github.com/Prosp3r/owlscalp/internal/filters"
+	"github.com/Prosp3r/owlscalp/internal/indicators"
+	"github.com/Prosp3r/owlscalp/internal/types"
 )
 
 type Backtester struct {

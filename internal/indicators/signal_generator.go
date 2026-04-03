@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Prosp3r/0xwire/owlscalp/internal/types"
+	"github.com/Prosp3r/owlscalp/internal/types"
 )
 
 func GenerateSignal(symbol string, candles []types.Candle) *types.TradeSignal {

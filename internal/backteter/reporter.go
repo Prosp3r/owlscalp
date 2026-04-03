@@ -3,7 +3,7 @@ package backtester
 import (
 	"fmt"
 
-	"github.com/Prosp3r/0xwire/owlscalp/internal/types"
+	"github.com/Prosp3r/owlscalp/internal/types"
 )
 
 func PrintResult(r *types.BacktestResult) {

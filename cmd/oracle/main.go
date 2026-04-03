@@ -6,9 +6,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Prosp3r/0xwire/owlscalp/internal/backtester"
-	"github.com/Prosp3r/0xwire/owlscalp/internal/types"
-	"github.com/Prosp3r/0xwire/owlscalp/internal/utils"
+	"github.com/Prosp3r/owlscalp/internal/backtester"
+	"github.com/Prosp3r/owlscalp/internal/types"
+	"github.com/Prosp3r/owlscalp/internal/utils"
 )
 
 func generateSyntheticCandles(count int) []types.Candle {
