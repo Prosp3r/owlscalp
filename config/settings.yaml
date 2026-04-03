@@ -1,0 +1,76 @@
+defaults:
+  leverage: 10
+  atr_period: 14
+  min_leveraged_return: 5.0
+
+categories:
+  NEW_LISTINGS:
+    rsi_min_for_signal: 58.0
+    rsi_min_for_tier_a: 63.0
+    rsi_min_for_tier_b: 60.0
+    rsi_strong_ob: 73.0
+    position_size_multi: 1.0
+    risk_multiplier: 1.2
+    max_hold_multiplier: 0.8
+  MEMECOINS:
+    rsi_min_for_signal: 999.0
+    rsi_min_for_tier_a: 999.0
+    rsi_min_for_tier_b: 999.0
+    rsi_strong_ob: 999.0
+    position_size_multi: 0.8
+    risk_multiplier: 1.3
+    max_hold_multiplier: 0.7
+  LOW_CAP:
+    rsi_min_for_signal: 61.0
+    rsi_min_for_tier_a: 67.0
+    rsi_min_for_tier_b: 64.0
+    rsi_strong_ob: 73.0
+    position_size_multi: 0.9
+    risk_multiplier: 1.1
+    max_hold_multiplier: 0.9
+  MID_CAP:
+    rsi_min_for_signal: 61.0
+    rsi_min_for_tier_a: 71.0
+    rsi_min_for_tier_b: 65.0
+    rsi_strong_ob: 74.0
+    position_size_multi: 1.0
+    risk_multiplier: 1.0
+    max_hold_multiplier: 1.0
+  HIGH_CAP:
+    rsi_min_for_signal: 62.0
+    rsi_min_for_tier_a: 72.0
+    rsi_min_for_tier_b: 66.0
+    rsi_strong_ob: 75.0
+    position_size_multi: 1.1
+    risk_multiplier: 0.9
+    max_hold_multiplier: 1.1
+  DEFAULT:
+    rsi_min_for_signal: 62.0
+    rsi_min_for_tier_a: 72.0
+    rsi_min_for_tier_b: 66.0
+    rsi_strong_ob: 75.0
+    position_size_multi: 1.0
+    risk_multiplier: 1.0
+    max_hold_multiplier: 1.0
+
+filters:
+  oi_change_threshold: 2.0
+  funding_rate_threshold: -0.0001
+  liquidation_buffer_pct: 1.5
+  max_funding_check_hours: 24
+  breakdown_oi_threshold: -2.0
+  min_leveraged_return: 5.0
+  htf_trend_bullish: 0.7
+  htf_trend_bearish: 0.3
+  high_correlation_thresh: 0.7
+  low_correlation_thresh: 0.3
+
+watchtower:
+  check_interval_seconds: 5
+  max_pending_age_minutes: 60
+  log_interval_cycles: 30
+
+backtester:
+  initial_balance: 1000
+  trade_amount: 100
+  commission: 0.0005
